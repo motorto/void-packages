@@ -1,0 +1,22 @@
+# Template file for 'haskell-language-server'
+
+pkgname=haskell-language-server
+version=0.6.0
+revision=1
+wrksrc=${pkgname}
+create_wrksrc=yes
+build_style=haskell-stack
+hostmakedepends="stack ghc"
+short_desc="Integration point for ghcide and haskell-ide-engine"
+maintainer="André Cerqueira <acerqueira021@gmail.com>"
+license="GPL-3.0-or-later"
+homepage="https://github.com/haskell/haskell-language-server"
+distfiles="https://github.com/haskell/${pkgname}/archive/${version}.tar.gz
+https://github.com/haskell/ghcide/archive/v0.5.0.tar.gz"
+checksum="7b8075bbeefcc6151a474dd3ce9ad97e815cf4b635094209967bcb7b01d15055
+7e12cd80bcd15bf08c55ac994aa8d1f6ba1ec8f9f20f1740d3717250eec98d5e"
+
+post_extract(){
+	rm -rf ${pkgname}-${version}/ghcide
+	mv ghcide-0.5.0 ${pkgname}-${version}/ghcide/
+}
