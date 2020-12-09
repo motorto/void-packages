@@ -1,0 +1,19 @@
+# Template file for 'sb'
+pkgname=sb
+version=0.1
+revision=1
+create_wrksrc=yes
+build_style=gnu-makefile
+hostmakedepends="git"
+#makedepends=""
+depends="xsetroot"
+short_desc="Shitty bar for dwm"
+maintainer="André Cerqueira <acerqueira021@gmail.com>"
+license="GPL-3.0-or-later"
+homepage="https://git.ckyln.com/sb/file/README.md.html"
+#distfiles=""
+#checksum=badbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadb
+
+do_fetch(){
+ git clone git://git.ckyln.com/~cem/sb.git sb-0.1
+}

@@ -1,6 +1,6 @@
 # Template file for 'font-iosevka'
 pkgname=font-iosevka
-version=3.7.1
+version=4.0.2
 revision=1
 create_wrksrc=yes
 depends="font-util"
@@ -10,10 +10,12 @@ license="OFL-1.1"
 homepage="https://typeof.net/Iosevka/"
 distfiles="https://raw.githubusercontent.com/be5invis/Iosevka/v${version}/LICENSE.md>LICENSE.txt
  https://github.com/be5invis/Iosevka/releases/download/v${version}/ttc-iosevka-${version}.zip
- https://github.com/be5invis/Iosevka/releases/download/v${version}/ttc-iosevka-slab-${version}.zip"
+ https://github.com/be5invis/Iosevka/releases/download/v${version}/ttc-iosevka-slab-${version}.zip
+ https://github.com/be5invis/Iosevka/releases/download/v${version}/ttc-iosevka-aile-${version}.zip"
 checksum="e61c0988bb231a321f14cce1b119a468f279ea86826c32e943ab16dbf08c1ba9
- d9022b15e2a726a79bb154e8800bd650d0c6b8987c19c49ab698722b86334240
- 41494ecca4888c06420e4fa0f6e2ff4f7ac15f0c01642455cb7c5be86fd979b1"
+ ea3fb3efc779f9749bcb4c955cadecfc5f379283ec25df13c0040ef35fae05dd
+ f993796e1f1a6315b6e31034b436434ade3753c882cc56ba92861027b2465d67
+ 5f4de75bb7b08d395e272c219c2ff89168050ba67653a883900f520d1c576a06"
 
 font_dirs="/usr/share/fonts/TTF"
 
