@@ -1,3 +1,14 @@
+# WARNING !!! 
+
+This branch consist of packages that won't be accepted on main or are "modifications" of packages 
+that already exist on upstream (unfortunately xbps-src still requires all the packages so the build process works)
+
+Currently I have modified/created this packages:
+
+* font-iosevka (added iosevka-aile )
+* sb (shitty bar for dwm)
+
+
 ## The XBPS source packages collection
 
 This repository contains the XBPS source packages collection to build binary packages
